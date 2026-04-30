@@ -113,6 +113,35 @@ The notebook will:
 
 ---
 
+## Dashboard
+
+An interactive Streamlit dashboard for exploring and comparing channel and video data stored in `youtube.db`.
+
+### Run the dashboard
+
+```bash
+pip install -r requirements.txt
+streamlit run dashboard/app.py
+```
+
+The dashboard reads from the existing SQLite database. Run the scraper notebook first to populate it.
+
+### Features
+
+- **Sidebar filters** — channel multi-select, publish date range, primary metric (Views / Likes / Comments / Engagement rate), Top N slider
+- **KPI cards** — channels selected, videos in range, total views, avg engagement rate
+- **Channel comparison** — metric and subscriber bar charts (shown when 2+ channels selected)
+- **Time series** — upload cadence and cumulative metric over time
+- **Top videos table** — sortable, filtered by Top N
+- **Engagement deep-dive** — views vs engagement rate scatter, duration vs views scatter
+- **Distribution** — view count box plot by channel
+
+### Screenshot
+
+_Add a screenshot here after first run._
+
+---
+
 ## Author
 
 **Muhammad Hamza Saleem**
