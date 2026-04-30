@@ -4,8 +4,9 @@
 secrets.json
 config.json
 
-# CSV output files (generated data)
+# Generated data files
 *.csv
+*.db
 
 # Python
 __pycache__/
